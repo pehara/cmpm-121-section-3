@@ -2,12 +2,11 @@ import * as Phaser from "phaser";
 
 export default class Menu extends Phaser.Scene {
   constructor() {
-    super("menu");
+    super({ key: "menu" });
   }
 
   create() {
-    // Don't show any game menu here.
-    // Just immediately transition to the play scene.
+    // No menu needed; transition to the play scene immediately.
     this.scene.start("play");
   }
 }
